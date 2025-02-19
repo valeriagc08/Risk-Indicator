@@ -34,8 +34,8 @@ Un archivo **.ushay** es el formato que utiliza el SOCE para comprimir archivos,
 ### Entrada (CSV)
 | sl_contract_id | filename              | extension | hash     | file_path           |
 |----------------|-----------------------|-----------|----------|---------------------|
-| 123456         | contrato.ushay        | .ushay   | abc12345 | /ruta/parte1.ushay  |
-| 123456         | contrato.ushay        | .ushay   | 456def78 | /ruta/parte2.ushay  |
+| 123456         | parte1.ushay        | .ushay   | abc12345 | /ruta/parte1.ushay  |
+| 123456         | parte2.ushay        | .ushay   | 456def78 | /ruta/parte2.ushay  |
 | 789101         | documento_unico.ushay | .ushay   | xyz98765 | /ruta/unico.ushay   |
 
 ### Salida
