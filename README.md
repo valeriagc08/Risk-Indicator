@@ -1,8 +1,7 @@
 # Risk-Indicator
 
-# Procesamiento y Reconstrucción de Archivos .ushay
-
-## Objetivo
+## 2. Procesamiento y Reconstrucción de Archivos .ushay
+### Objetivo
 Procesar archivos `.ushay` a partir de un CSV y reconstruirlos en archivos ZIP, garantizando la integridad y evitando archivos corruptos. Se distinguen archivos únicos de aquellos fragmentados.
 
 ## ¿Qué es un archivo .ushay?
