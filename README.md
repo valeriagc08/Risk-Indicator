@@ -1,6 +1,7 @@
 # Risk-Indicator
 ## 1. Análisis Descriptivo
-## 2. Procesamiento y Reconstrucción de Archivos .ushay
+## 3. Notebook ushay.ipynb
+### 3.1 Procesamiento y Reconstrucción de Archivos .ushay
 ### Objetivo
 Procesar archivos `.ushay` que pueden estar en partes pero son identificados a un proceso de compra pública con un sl_contract_id, luego reconstruirlos en archivos ZIP, garantizando la integridad y evitando archivos corruptos. Se distinguen archivos únicos de aquellos fragmentados (por partes).
 
@@ -41,3 +42,47 @@ Un archivo **.ushay** es el formato que utiliza el SOCE para comprimir archivos,
 ### Salida
 - **123456:** Archivo fragmentado, reconstruido a partir de partes y guardado en ZIP.  
 - **789101:** Archivo único guardado directamente en ZIP.
+### 3.2 Procesamiento y Visualización de Embeddings de Documentos
+
+Se procesa documentos de texto en formatos PDF, DOCX y TXT, extrae su contenido, genera embeddings utilizando Doc2Vec, y los combina con indicadores de un dataset externo para realizar análisis de correlación y visualización de datos con PCA y t-SNE.
+
+**1. Carga y Preprocesamiento de Archivos**
+
+Se define el directorio donde están los archivos descomprimidos.
+Se excluyen ciertos archivos y extensiones no relevantes (imágenes, videos, archivos comprimidos, etc.).
+Se extrae texto de archivos:
+
+- TXT: Se lee directamente.
+- PDF: Se extrae con pdfplumber.
+- DOCX: Se extrae con python-docx.
+
+**2. Generación de Embeddings con Doc2Vec**
+
+- Se entrena un modelo Doc2Vec con los documentos procesados.
+- Se generan embeddings (100 dim) para cada documento.
+- Se guardan los embeddings en un archivo CSV.
+
+**3. Análisis de Correlación**
+
+- Se calcula la matriz de correlación entre los embeddings y los indicadores.
+- Se genera un mapa de calor para visualizar las correlaciones.
+  
+[Ver imagen de resultados](https://github.com/user-attachments/assets/f9f5bd5c-3162-4b8d-9bce-2902d20ab4ab)
+
+**4. Visualización de Embeddings**
+
+- Se clasifican los valores de sie_ic_promedio en categorías (Bajo, Medio, Medio Alto, Alto).
+- Los rangos de clasificación para sie_ic_promedio:
+     -  Bajo: sie_ic_promedio ≤ 0.50
+     -  Medio: 0.50 < sie_ic_promedio ≤ 0.70
+     -  Medio Alto: 0.70 < sie_ic_promedio ≤ 0.85
+     -  Alto: sie_ic_promedio > 0.85
+- Se aplican dos métodos de reducción de dimensionalidad:
+
+   - PCA (Principal Component Analysis)
+     [Ver imagen de resultados](https://github.com/user-attachments/assets/c38829f3-19f7-45fb-b66e-97600bbd59e8)
+
+   - t-SNE (t-Distributed Stochastic Neighbor Embedding)
+     <img width="764" alt="Screenshot 2025-02-20 at 2 10 55 PM" src="https://github.com/user-attachments/assets/26009f65-0da4-4327-b244-39f6328c1112" />
+
+
