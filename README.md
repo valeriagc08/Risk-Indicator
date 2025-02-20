@@ -1,5 +1,5 @@
 # Risk-Indicator
-
+## 1. Análisis Descriptivo
 ## 2. Procesamiento y Reconstrucción de Archivos .ushay
 ### Objetivo
 Procesar archivos `.ushay` que pueden estar en partes pero son identificados a un proceso de compra pública con un sl_contract_id, luego reconstruirlos en archivos ZIP, garantizando la integridad y evitando archivos corruptos. Se distinguen archivos únicos de aquellos fragmentados (por partes).
@@ -14,8 +14,8 @@ Un archivo **.ushay** es el formato que utiliza el SOCE para comprimir archivos,
 
 2. **Agrupación y Clasificación:**  
    - Se agrupan los archivos por `sl_contract_id`.  
-   - **Archivo único:** Se guarda directamente en formato ZIP.  
-   - **Archivo fragmentado:** Se unen las partes tras verificar la integridad con SHA-1 y se genera el ZIP consolidado.
+   - **CASO 1:** **Archivo único** -> Se guarda directamente en formato ZIP.  
+   - **CASO 2:** **Archivo fragmentado** -> Se unen las partes tras verificar la integridad con SHA-1 y se genera el ZIP.
 
 3. **Verificación y Almacenamiento:**  
    - Se utiliza SHA-1 para validar la integridad de los fragmentos y se manejan errores para evitar el procesamiento de archivos corruptos.
