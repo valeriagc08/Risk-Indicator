@@ -2,7 +2,7 @@
 
 ## 2. Procesamiento y Reconstrucción de Archivos .ushay
 ### Objetivo
-Procesar archivos `.ushay` que pueden estar en partes pero identificados con un sl_contract_id único, luego reconstruirlos en archivos ZIP, garantizando la integridad y evitando archivos corruptos. Se distinguen archivos únicos de aquellos fragmentados(por partes).
+Procesar archivos `.ushay` que pueden estar en partes pero son identificados a un proceso de compra pública con un sl_contract_id, luego reconstruirlos en archivos ZIP, garantizando la integridad y evitando archivos corruptos. Se distinguen archivos únicos de aquellos fragmentados (por partes).
 
 ## ¿Qué es un archivo .ushay?
 Un archivo **.ushay** es el formato que utiliza el SOCE para comprimir archivos, similar a un ZIP, pero que incluye un separador llamado **sercop** para dividir internamente el contenido. Estos archivos contienen documentos del proceso de contratación pública.
