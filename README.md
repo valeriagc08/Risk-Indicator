@@ -15,7 +15,7 @@ Un archivo **.ushay** es el formato que utiliza el SOCE para comprimir archivos,
 2. **Agrupación y Clasificación:**  
    - Se agrupan los archivos por `sl_contract_id`.  
    - **CASO 1:** **Archivo único** -> Se guarda directamente en formato ZIP.  
-   - **CASO 2:** **Archivo fragmentado:** Se unen las partes tras verificar la integridad con SHA-1 y se genera el ZIP.
+   - **CASO 2:** **Archivo fragmentado** -> Se unen las partes tras verificar la integridad con SHA-1 y se genera el ZIP.
 
 3. **Verificación y Almacenamiento:**  
    - Se utiliza SHA-1 para validar la integridad de los fragmentos y se manejan errores para evitar el procesamiento de archivos corruptos.
