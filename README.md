@@ -67,7 +67,7 @@ Se extrae texto de archivos:
 - Se calcula la matriz de correlación entre los embeddings y los indicadores.
 - Se genera un mapa de calor para visualizar las correlaciones.
   
-[![Visualización de Resultados](https://github.com/user-attachments/assets/f9f5bd5c-3162-4b8d-9bce-2902d20ab4ab)](https://github.com/user-attachments/assets/f9f5bd5c-3162-4b8d-9bce-2902d20ab4ab)
+[Ver imagen de resultados](https://github.com/user-attachments/assets/f9f5bd5c-3162-4b8d-9bce-2902d20ab4ab)
 
 **4. Visualización de Embeddings**
 
