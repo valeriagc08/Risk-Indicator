@@ -73,10 +73,10 @@ Se extrae texto de archivos:
 
 - Se clasifican los valores de sie_ic_promedio en categorías (Bajo, Medio, Medio Alto, Alto).
 - Los rangos de clasificación para sie_ic_promedio:
-      Bajo: sie_ic_promedio ≤ 0.50
-      Medio: 0.50 < sie_ic_promedio ≤ 0.70
-      Medio Alto: 0.70 < sie_ic_promedio ≤ 0.85
-      Alto: sie_ic_promedio > 0.85
+     -  Bajo: sie_ic_promedio ≤ 0.50
+     -  Medio: 0.50 < sie_ic_promedio ≤ 0.70
+     -  Medio Alto: 0.70 < sie_ic_promedio ≤ 0.85
+     -  Alto: sie_ic_promedio > 0.85
 - Se aplican dos métodos de reducción de dimensionalidad:
 
    - PCA (Principal Component Analysis)
