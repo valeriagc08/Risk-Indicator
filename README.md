@@ -1,5 +1,5 @@
 # Risk-Indicator
-
+## 1. Análisis Descriptivo
 ## 2. Procesamiento y Reconstrucción de Archivos .ushay
 ### Objetivo
 Procesar archivos `.ushay` que pueden estar en partes pero son identificados a un proceso de compra pública con un sl_contract_id, luego reconstruirlos en archivos ZIP, garantizando la integridad y evitando archivos corruptos. Se distinguen archivos únicos de aquellos fragmentados (por partes).
