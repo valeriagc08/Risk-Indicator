@@ -1,7 +1,7 @@
 # Risk-Indicator
 ## 1. Análisis Descriptivo
 ## 2. Notebook ushay.ipynb
-## 2.1 Procesamiento y Reconstrucción de Archivos .ushay
+### 2.1 Procesamiento y Reconstrucción de Archivos .ushay
 ### Objetivo
 Procesar archivos `.ushay` que pueden estar en partes pero son identificados a un proceso de compra pública con un sl_contract_id, luego reconstruirlos en archivos ZIP, garantizando la integridad y evitando archivos corruptos. Se distinguen archivos únicos de aquellos fragmentados (por partes).
 
@@ -42,11 +42,9 @@ Un archivo **.ushay** es el formato que utiliza el SOCE para comprimir archivos,
 ### Salida
 - **123456:** Archivo fragmentado, reconstruido a partir de partes y guardado en ZIP.  
 - **789101:** Archivo único guardado directamente en ZIP.
-## 2.2 Procesamiento y Visualización de Embeddings de Documentos
+### 2.2 Procesamiento y Visualización de Embeddings de Documentos
 
 Se procesa documentos de texto en formatos PDF, DOCX y TXT, extrae su contenido, genera embeddings utilizando Doc2Vec, y los combina con indicadores de un dataset externo para realizar análisis de correlación y visualización de datos con PCA y t-SNE.
-
-Flujo del Proyecto
 
 1. Carga y Preprocesamiento de Archivos
 
