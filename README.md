@@ -83,6 +83,6 @@ Se extrae texto de archivos:
      [Ver imagen de resultados](https://github.com/user-attachments/assets/c38829f3-19f7-45fb-b66e-97600bbd59e8)
 
    - t-SNE (t-Distributed Stochastic Neighbor Embedding)
-      <img width="758" alt="Screenshot 2025-02-20 at 1 46 15 PM" src="https://github.com/user-attachments/assets/65207e79-ce12-4cd1-bca7-1f83248e694b" />
+     <img width="764" alt="Screenshot 2025-02-20 at 2 10 55 PM" src="https://github.com/user-attachments/assets/26009f65-0da4-4327-b244-39f6328c1112" />
 
 
