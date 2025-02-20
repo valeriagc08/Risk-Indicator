@@ -59,7 +59,7 @@ Se extrae texto de archivos:
 **2. Generación de Embeddings con Doc2Vec**
 
 - Se entrena un modelo Doc2Vec con los documentos procesados.
-- Se generan embeddings para cada documento.
+- Se generan embeddings (100 dim) para cada documento.
 - Se guardan los embeddings en un archivo CSV.
 
 **3. Análisis de Correlación**
