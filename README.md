@@ -75,7 +75,8 @@ Se extrae texto de archivos:
 - Se aplican dos métodos de reducción de dimensionalidad:
 
    - PCA (Principal Component Analysis)
-     <img width="693" alt="Screenshot 2025-02-20 at 1 46 32 PM" src="https://github.com/user-attachments/assets/9e81eb0b-83d3-4e2d-beed-4dba3d76b282" />
+     [Ver imagen de resultados](https://github.com/user-attachments/assets/c38829f3-19f7-45fb-b66e-97600bbd59e8)
+
    - t-SNE (t-Distributed Stochastic Neighbor Embedding)
       <img width="758" alt="Screenshot 2025-02-20 at 1 46 15 PM" src="https://github.com/user-attachments/assets/65207e79-ce12-4cd1-bca7-1f83248e694b" />
 
